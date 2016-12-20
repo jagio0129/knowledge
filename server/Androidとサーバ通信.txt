@@ -1,0 +1,4 @@
+[http://www.programering.com/a/MDO1kjNwATU.html]
+[http://furudate.hatenablog.com/entry/2013/06/09/025812]
+[http://qiita.com/tomo_watanabe/items/e5d078847c59dec693a3]
+[http://denshikousaku.net/android-asynchronous-http-client]

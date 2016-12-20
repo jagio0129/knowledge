@@ -1,0 +1,30 @@
+**Rubyのバージョン指定(rbenvを使用しているなら)
+
+	//現時点で使用可能なバージョンの確認
+	$ ruby -v
+	
+	//インストール可能なバージョンの確認
+	$rbenv install -list 
+	
+	//バージョンを指定してインストール
+	$ rbenv install 2.0.0-p353		(Railsチュートリアルは2.0.0-p353で)
+	
+	//使用するバージョンの指定
+	$ rbenv global/local 2.0.0-p353  		(globalはシステム全体で、localはカレントディレクトリ内のみ)
+	
+**Railsのバージョン指定・その他
+
+	
+	//現時点で使用可能なバージョンの確認
+	$ rails -v
+
+	//バージョンを指定してインストール
+	$ gem install rails -v 4.0.5 --no-ri --no-rdoc  (Railsチュートリアルは4.0.5で。--no-ri --no-rdocは不要なドキュメントのインスコを省略できるので、Railsのインスコが早い)
+	
+	//バージョンを指定してアプリを作成
+	$ rails _4.0.5_ new app_name
+	
+	//Railsサーバー立ち上げ
+	$ bundle exec rails s -b 0.0.0.0
+	
+	

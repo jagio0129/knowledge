@@ -1,0 +1,46 @@
+
+
+/* 初期設定 */
+１．Puttyで先にRailsアプリを作成。bundle installしておく。
+２．RubyMineでVagrantの設定。
+		=>Tootls->Deployment->ConfigurationよりSFTPを選んで作成。
+		=>	SFTP host: 	127.0.0.1
+			Port:		2222
+			User name:	vagrant
+		=>	マッピング設定は適宜
+３．Ruby SDKの設定
+		=>File->setting->Language...->new remoteを選択
+		=>vagrantにチェック。Instanceはvagrantfileのあるディレクトリ。
+		=>Ruby interpreter path:	/home/vagrant/.rbenv/versions/2.0.0-p247/bin/ruby
+
+コーディングはRubyMineで行うがrails,bundle,rakeなどのコマンド操作はSSHクライアントより
+行う
+
+
+
+\\ショートカットキー
+
+	Alt+Shift+U		キャメル/スネークケースの切り替え
+	Ctrl+Shift+U	文字列大文字/小文字
+	Ctrl+Shift+A 	bundle install, rake, spec, migration etc..などのコマンド打てる	
+	Alt+R			Rake Task系のコマンド spec, db:migrate...
+	Ctrl+Alt+G 		Generate系のコマンドを呼び出す
+	Ctrl+Shift+O	プロジェクト内でファイルを検索する
+	Ctrl+F			ファイル内の文字列検索
+	Ctrl+Shift+F	プロジェクト内から文字列検索
+ 	Ctrl+Alt+L 		コードをリフォーマット
+	
+	参考
+	[http://qiita.com/tochi/items/1308c8ca830ae97b6dda]
+	
+/*参考サイト*/
+
+【導入】
+[http://qiita.com/Gin326M/items/4648c389a12a3e00e270]
+[http://qiita.com/akiko-pusu/items/1df59e9c17d392c17f03]
+[http://qiita.com/zchee/items/77800caffadf6e3ddc3f]
+[http://techracho.bpsinc.jp/maeda/2014_04_03/15814]
+[http://qiita.com/zchee/items/77800caffadf6e3ddc3f]
+
+【使い方】
+[http://qiita.com/ruzia/items/2edd8d45c16ac2c70dd7]

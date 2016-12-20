@@ -1,0 +1,1 @@
+curl --header "Authorization: key=＜Android API key＞" --header Content-Type:"application/json" https://android.googleapis.com/gcm/send -d "{\"registration_ids\":[\"＜レジストレーションID＞\"],\"data\":{\"message\":\"にっこにっこにー\"}}"

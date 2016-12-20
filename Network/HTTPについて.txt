@@ -1,0 +1,14 @@
+/* GET POSTについて */
+[http://www.yoheim.net/blog.php?q=20120611]
+
+/* GETとPOST,それぞれのデータの受け方 */
+	GET	：HTTP/0.9から規定されており、データをサーバに送る手段として、当時においては唯一の手段だった。
+				ただ、２５５文字分しか有効にならないという制限があった。
+				しかも、URLエンコード（後述）した状態で２５５文字までなので、複雑なフォームを送信しようとするには限界があった。
+			
+	POST：これを改善するかのように、最大有効文字数という制限がない POST という手段が規定された。
+				ただ、リクエスト時のHTTPヘッダーに、Content-Lengthヘッダーを含める必要がある。
+[http://www.futomi.com/lecture/form/]
+
+/* POST GETの使い分け */
+[http://scene-live.com/page.php?page=27]

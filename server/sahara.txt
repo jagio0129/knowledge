@@ -1,0 +1,15 @@
+Sahara というサードパーティライブラリは Vagrant に commit & rollback ができる機能を追加します。vagrant 上であれこれ作業していまいちだな、とおもったら vagrant sandbox roollback すると環境を巻き戻すことができる。
+
+//saharaのインスコ
+vagrant plugin install sahara
+
+# sandbox モードに入る
+% vagrant sandbox on
+
+# sandbox モード on に入った時点まで巻き戻す!
+% vagrant sandbox rollback
+
+# 変更を確定
+% vagrant sandbox commit
+
+[http://dev.classmethod.jp/tool/vagrant-sahar/]

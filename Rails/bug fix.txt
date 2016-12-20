@@ -1,0 +1,30 @@
+*******************
+*** RoR bug fux ***
+*******************
+
+/* MySQLでrootパスワードを忘れたときの対処法 */
+	=> [http://liginc.co.jp/web/programming/mysql/87393]
+	
+/* ホストとゲストの時刻が合わない */
+	=> [http://blog.denpanomori.com/vagrant/]
+	
+/* railsでbundle install で mysql-devel がインストールできない */
+	=> mysqlを再インスコ
+	[http://blog.10rane.com/2014/07/28/reinstall-mysql56/]
+	
+	=> $ sudo yum -y install mysql-devel.x86_64 --enablerepo=remi
+	で再bundleしたら通った
+	
+/* mysqlのルート権限が変更できない */
+	[http://g-chan.dip.jp/square/archives/2013/02/linux_centos63mysql56install.html]
+	
+
+/* CentOSでcurlが実行できない	*/
+	=> 時刻が正しく設定されていないため.下記URLどうりにホストマシンと時刻を合わせcurlすると通った。
+		[http://qiita.com/nobuyuki-ishii/items/318db15c8754d88406f5]
+		
+/* rbenv: bundle : command not found */
+	=> bundle -vでバージョン確認。なかったらgem install bundler
+	
+/* DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+	=> https://teratail.com/questions/43607

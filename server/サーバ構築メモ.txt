@@ -1,0 +1,105 @@
+/*******************************
+******* サーバの構築 ***********
+*******************************/
+
+/** 作業手順(個人的イメージ) **/
+
+１．仮想サーバを立てる
+	--VMware player,Virtual Boxなどインスコ
+	--上記の仮想環境にCentOS、Apache、導入
+	
+２．サーバ機に仮想サーバで構築した環境をデプロイ
+	--全く不明
+	
+３．WEBアプリケーション作成
+	--Ruby on Rails? , CakePHP?, Javaサーブレット/JSP?
+	(できればjavaで、だめならRailsで作成)
+	--認証の仕組みが必要
+	
+/** 必要知識 **/
+	--UNIXコマンド,yum,Gemの知識
+	--ネットワーク構成の知識(NATとか)
+	--通信に関する知識(SSH接続など)
+	
+	
+
+//ポートを開く
+	http://d.hatena.ne.jp/yus_iri/20110916/1316190103
+	
+	
+【CentOSのコマンドラインで】
+	su:
+	ifconfig:		ネットワーク環境が見れる
+	rmp -qa httpd:		Apacheがインストールされているか確認
+	chkconfig --list httpd:		Apacheの状態を確認
+	chkconfig httpd on:		CentOSを起動するたびにApacheも自動で起動する。
+	
+	tree:ディレクトリ構造をグラフィカルに表示してくれる。デフォでは入っていないので
+	http://blog.jicoman.info/2013/08/tree_command_install/
+	を参考にインスコ
+	
+	
+	//iptablesの確認
+	iptablesとはLinux系OSに実装されるファイアウォール機能。インストールしただけじゃ機能しないので、全部自分で設定を行う。失敗するとリモート（ネット経由）で（設定者自身も）接続出来なくなってしまう
+	yum list installed | grep iptables -> iptablesがインストールされているか確認
+	yum -y install iptables -> iptablesのインスコ
+	(後からyumでインスコした場合、80番ポートは閉じているので注意)
+	
+	
+// viの使い方
+	[a]:INSERT=文字が入力できる
+	[ESC]:文字入力処理から抜ける
+	ESC後に[:q]:viを保存せずに終了。[:q!]:強制終了。[:w]:保存
+	
+	
+// ポートフォワーディング "port forwarding"
+	NAT + IPマスカレード の環境下において、特定の ポート番号 宛ての パケット を、 WAN 側から LAN 側の特定の ホスト の任意のポート番号宛てに着信させることをいいます。
+	
+//NATとIPマスカレード
+	http://www.asi.co.jp/techinfo/unix/nat.html
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+/*****************	
+*** 参考サイト ***
+*****************/
+
+/** サーバ **/
+
+お便利サーバ.com	(http://www.obenri.com/index.html)
+ブロードバンド初心者ガイド(http://www.geocities.jp/seidy_seidy/bb/index.html)
+CentOSで自宅サーバー構築	(http://centossrv.com/)
+VMware PlayerにCentOS導入 (http://freesoft.tvbok.com/freesoft/virtual/vmware_centos1.html)
+sshとsslの違いについて	(http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10135783160)(http://shirusu-ni-tarazu.hatenablog.jp/entry/2013/02/18/033214)
+簡単に自分のローカルサーバをオンラインに公開「ngrok」	(http://www.moongift.jp/2013/07/20130714/)
+ローカルからドメイン名でアクセスできない (http://www.bflets.dyndns.org/Trouble/LocalDomain.html)
+仮想環境構築ツール「Vagrant」でローカル開発環境を構築してみた (http://www.unionnet.jp/develop/vagrant-1/)
+Vagrant導入メモ (http://qiita.com/ANTON072/items/a0dabf0c2e4941803dce)
+
+
+/** アプリケーション **/
+
+2014年 Webアプリケーションフレームワークトレンド（PHP / Java / Ruby / Python / Perl）	(http://qiita.com/shukotang/items/055058b33b553b48c164)
+javaによるwebアプリケーション	(http://www.wakhok.ac.jp/~tomoharu/web2004/text/index_c1.html)
+Webアプリケーションのオブジェクト指向プログラミング	(https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=8&cad=rja&uact=8&sqi=2&ved=0CEwQFjAH&url=http%3A%2F%2Fash.jp%2Fjava%2Fwebapp_obj.htm&ei=jakCVfPXHKW2mQXHhYGICw&usg=AFQjCNEXkuWvjAYg3_itGRhXgwiHvvGhnw&sig2=b_sQ6bVhA6JPLjSdo79ApQ)
+Java Servlet/JSP (http://www.javaroad.jp/servletjsp/index.html)
+
+
+
+
+
+
+
+
+
+
+

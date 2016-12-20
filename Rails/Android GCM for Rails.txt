@@ -1,0 +1,10 @@
+この記事道理にやったら成功した
+[http://mateuyabar.com/blog/android/rubyonrails/gcm/2015/05/13/Google-Cloud_Messaging-with-Ruby-On-Rails.html]
+
+GCM on Rails
+[http://yamanetoshi.github.io/blog/2015/05/26/did-gcm-in-rails/]
+[http://www.atmarkit.co.jp/ait/articles/1302/12/news029_2.html]
+[http://famtom.hatenablog.com/entry/2014/09/09/184220]
+
+GCMの本質実装だけでなくRegIDの保存処理まで書いてある。
+[http://d.hatena.ne.jp/m-kawato/20120923/1348394384]

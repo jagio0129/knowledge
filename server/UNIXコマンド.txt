@@ -1,0 +1,8 @@
+tree:ディレクトリの構造をグラフィカルに表示できる
+[http://blog.jicoman.info/2013/08/tree_command_install/]
+
+nmap:ポートスキャンできる
+[http://www.searchman.info/tips/1050.html]
+
+CentOS6.5にvim導入
+[http://yellowring.hatenablog.jp/entry/2015/02/22/070648]

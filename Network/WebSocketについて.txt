@@ -1,0 +1,34 @@
+/* WebSocketとは */
+	--- httpについて
+				* httpはクライアントとサーバが常にリクエスト・レスポンスのペアでやり取りを行う前提
+				* このため常にクライアントから問い合わせないとサーバで何が起きてるか分からない
+				
+				そこで...
+				* http上でサーバとクライアントをつなぎっぱなしにして効率とリアルタイム性を上げる仕組みがWebSocket
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 参考サイト */
+
+Pusherでお手軽WebSocket – iPhoneから加速度をリアルタイム送信
+[http://kray.jp/blog/pusher_websocket/]
+
+node.jsの衝撃とWebSocketが拓く未来 
+[http://www.atmarkit.co.jp/ait/articles/1010/05/news133.html]
+
+WebSocketの現状と技術的課題
+[http://www.atmarkit.co.jp/ait/articles/1010/20/news105.html]

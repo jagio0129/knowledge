@@ -1,0 +1,30 @@
+****************
+**Android Bugs**
+****************
+
+----- テンプレート -------
+/* 問題 */
+	=> 解決方法
+		[リンク] 
+-----------------------
+
+/*
+	Eclipse用プロジェクトからAndroidStudio用プロジェクトに移行する際、
+	\appcompat_v7 is missing. Needed by CHCom. Make sure all dependencies are opened
+	のエラーが出て変換できない
+*/
+	=> [http://stackoverflow.com/questions/30695396/cant-export-adt-project-with-generate-gradle-build-files-option]
+
+/* Android StudioでgooglePlayServicesを入れるとエラーが出る。*/
+	=> compleSdkVersion:22に変更したら治った。
+	
+/* Android Studio 1.3.1に上げたらappcompat-v7:23でエラー */
+	=> compileSdkVersionを23にしたら治った
+		[https://code.google.com/p/android/issues/detail?id=183149]
+		
+// Runしたら「INSTALL_FAILED_OLDER_SDK」エラー
+	=>端末のバージョンとプロジェクトバージョンが違うのが原因
+		[http://lastshooting.blogspot.jp/2014/07/android-studioinstallfailedoldersdk.html]
+		
+// RecyclerViewのgetChildAdapterPositionのエラーが解消されない
+	=> builde.gradleにcompile 'com.android.support:recyclerview-v7:23.0.0'を追加
