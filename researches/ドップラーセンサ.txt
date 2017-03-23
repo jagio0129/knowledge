@@ -1,0 +1,3 @@
+- 概要(http://www.carea.jp/cra100/pdf/doppler.pdf)
+- 電波による人体への影響は？
+- カメラや接触式バイタルセンサとの違い(http://eetimes.jp/ee/articles/1506/25/news099.html)
