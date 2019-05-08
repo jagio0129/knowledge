@@ -1,9 +1,9 @@
-# StoryBoardを使わずにViewを扱う方法
+# StoryBoardを使わずにViewを扱う設定
 
 ## 環境
 - Xcode 10.2.1
 - Objective-C
-- iPhone SE (simulator)
+- iPhone SE (simulator & real device)
 
 ## 手順
 1. Single View Applicationでプロジジェクトを新規作成
