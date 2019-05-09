@@ -138,3 +138,6 @@ ViewController.mにボタンの処理を追加していく
     [alert show];
 }
 ```
+
+## 参考サイト
+- https://bluefish.orz.hm/sdoc/iphone_memo.html#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E4%BD%9C%E6%88%90
