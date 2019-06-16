@@ -1,1 +1,0 @@
-- [Googleが同社のオープンソースプロジェクトをすべて一箇所にまとめたサイトをオープン、関連ドキュメントも充実 | TechCrunch Japan](http://jp.techcrunch.com/2017/03/29/20170328google-launches-new-site-to-showcase-its-open-source-projects-and-processes/)

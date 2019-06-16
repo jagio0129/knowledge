@@ -1,6 +1,0 @@
-Railsアプリケーションで検索機能を実装する際、「Ransack」を導入するケースが増えている。
-
-Ransackの２つのモード
-	・Simpleモード
-		controllerとviewのインタフェースとしてsearchオブジェクトを使って簡単に検索フォームの実装ができます。 searchオブジェクトは通常のRailsアプリケーションにおいてmodelのインスタンスでcontrollerとviewのやりとりしているのを置き換える形になります。view側にはform_forに替わるsearch_form_forというヘルパーメソッドが用意されています。
-	・Adancedモード

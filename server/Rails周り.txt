@@ -1,5 +1,0 @@
-[http://zakihaya.hatenablog.com/entry/2013/12/30/200328]
-[http://kozo002.blogspot.jp/2012/01/rubybundler.html]
-
-/**ユーザ認証
-activadmin,cancancan,deviseとかでググる

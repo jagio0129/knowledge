@@ -1,5 +1,0 @@
-/* 共有ディレクトリが正常にマウントされない(GuestAdditionsがゲストとホストで合わない)
-	=>vagrant upのたびに自動でGuestAdditionsを合わせるようにする[http://qiita.com/isaoshimizu/items/e217008b8f6e79eccc85]
-	それでもだめ...
-	=>ゲストOSのkernelをupdate?[http://qiita.com/ystg/items/6eed1079fd26b0212286]
-	vagrant reload すると正常にマウントされた

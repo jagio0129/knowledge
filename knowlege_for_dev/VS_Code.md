@@ -1,1 +1,0 @@
-- [vscode ショーカット一覧](http://qiita.com/TakahiRoyte/items/cdab6fca64da386a690b)
