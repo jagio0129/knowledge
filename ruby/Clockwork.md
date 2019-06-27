@@ -1,4 +1,11 @@
-# **Clockwork**
+---
+title: CloclWork
+tags: ["Ruby", "gem"]
+excerpt: ローカルマシンで定期的にスクリプトを動かしたいと気に使える。cronのようなもの。
+date: 2018-12-31
+---
+
+# Clockwork
 
 ローカルマシンで定期的にスクリプトを動かしたいと気に使える。cronのようなもの。
 
