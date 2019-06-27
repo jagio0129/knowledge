@@ -1,7 +1,6 @@
 ### textlint on vscode
 - npmのインストール方法
   - https://qiita.com/taiponrock/items/9001ae194571feb63a5e
-
 - npm 6.9.0
 
 ```
@@ -17,7 +16,7 @@ vscodel-textlint install.
 
 ### textlint on docker 
 ```
-# setup
+# docker setup
 docker build -t jagio0129/textlint .
 
 # testlint run
