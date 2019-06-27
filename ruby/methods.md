@@ -4,7 +4,7 @@ tags: []
 excerpt: Rubyの様々なメソッドについてのまとめ
 ---
 ## [const_set](http://ref.xaio.jp/ruby/classes/module/const_set)
-- `mod.const_set(name, value)`
+- `Class.const_set(name, value)`
 - クラスやモジュールに定数を設定する。
 
 ```ruby

@@ -1,10 +1,12 @@
-# モンキーパッチ
-オリジナルのソースコードを変更する実行時に動的言語のコードを拡張したり、変更したりする方法。rubyではメタプログラミングという手法でモンキーパッチを行う。
-
+---
+title: モンキーパッチ
+tags: []
+excerpt: オリジナルのソースコードを変更する実行時に動的言語のコードを拡張したり、変更したりする方法。
+---
 ## やり方
 同じクラスを再定義し直すだけ。
 
-```rb
+```ruby
 class Hoge
 	def fuga
 		"a"
@@ -27,9 +29,9 @@ Hoge.new.fuga #=> "b"
 2. 組み込みライブラリにメソッドを足したい
 
 ## Refinement
-**モンキーパッチの適用範囲を制限できる**
+- **モンキーパッチの適用範囲を制限できる**
 
-```rb
+```ruby
 class Hoge
 	def fuga
 		"a"
@@ -50,8 +52,7 @@ Hoge.new.fuga #=> "b"
 ```
 
 ### Refinementのスコープ
-
-```rb
+```ruby
 class A
 	def b
 	end
@@ -69,7 +70,7 @@ end
 # クラス定義が終わっても対象
 ```
 
-```rb
+```ruby
 class A
 	def b
 	end
@@ -86,9 +87,8 @@ module B
 	end
 end
 ```
-
-> メソッドやブロックの中では使えない
+- メソッドやブロックの中では使えない
 
 ## 参考
-- http://sssslide.com/speakerdeck.com/sutetotanuki/rubymonkihatutifalseshi-jie
-- https://blog.kazu69.net/2014/11/23/examined-how-to-override-monkey-patch-methods-in-ruby/
+- [Rubyモンキーパッチの世界](http://sssslide.com/speakerdeck.com/sutetotanuki/rubymonkihatutifalseshi-jie)
+- [Rubyでメソッドを上書き(monkey patch)をする方法を調べてみた](https://blog.kazu69.net/2014/11/23/examined-how-to-override-monkey-patch-methods-in-ruby/)
