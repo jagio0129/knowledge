@@ -3,7 +3,7 @@ title: 例外処理の基礎
 tags: []
 # excerpt: ローカルマシンで定期的にスクリプトを動かしたいと気に使える。cronのようなもの。
 ---
-## Rubyにおける例外処理の基本(begin~rescue~end)
+## Rubyにおける例外処理の基本(begin rescue end)
 
 ```ruby
 class ExceptionTest
