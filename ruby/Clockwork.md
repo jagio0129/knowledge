@@ -1,6 +1,6 @@
 ---
 title: Clockwork
-tags: ["Ruby", "gem"]
+tags: ["gem"]
 excerpt: ローカルマシンで定期的にスクリプトを動かしたいと気に使える。cronのようなもの。
 ---
 # Clockwork
