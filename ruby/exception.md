@@ -4,7 +4,6 @@ tags: []
 # excerpt: ローカルマシンで定期的にスクリプトを動かしたいと気に使える。cronのようなもの。
 ---
 ## Rubyにおける例外処理の基本(begin rescue end)
-
 ```ruby
 class ExceptionTest
   def test
@@ -22,9 +21,7 @@ obj = ExceptionTest.new
 obj.test # => ZeroDivisionError
 ```
 
-
 ### rescue StandardError => exを追加
-
 ```ruby
 class ExceptionTest
   def test
@@ -43,11 +40,10 @@ obj = ExceptionTest.new
 # 例外発生
 obj.test # => StandardError
 ```
-
-rubyは上から下に向かい処理が実行されるため、発生した例外(今回ならZeroDivisionError)の親クラスであるStandardErrorkルアスのresucue節が実行される。
+- 発生した例外(今回ならZeroDivisionError)の親クラスであるStandardErrorkクラスのresucue節が実行される。
 
 ### raiseの追加
-railseは例外を発生させるKernelモジュールのインスタンスメソッド
+- railseは例外を発生させるKernelモジュールのインスタンスメソッド
 
 ```ruby
 class ExceptionTest
@@ -77,11 +73,10 @@ exception_test5.rb:6:in `/': divided by 0 (ZeroDivisionError)
 =end
 ```
 
-**raiseが発生した時点で実行中のrescue節が終了し、呼び出し元に戻る**
-rubyは例外が発生した場合、発生した地点から例外が補足されるまでスタックを辿り続ける。
+- **raiseが発生した時点で実行中のrescue節が終了し、呼び出し元に戻る**
+- rubyは例外が発生した場合、発生した地点から例外が補足されるまでスタックを辿り続ける。
 
 呼び出し元に例外補足処理を加えてみる。
-
 ```ruby
 class ExceptionTest
   def test
@@ -112,11 +107,10 @@ Other
 class: ZeroDivisionError
 =end
 ```
-
-しっかりとステックを辿り、例外が補足されていることがわかる。rescue切ないで実行されるraiseメソッドに引数を省略した場合、**対象のrescue節の引数と同じオブジェクトが渡される。**
+- しっかりとステックを辿り、例外が補足されていることがわかる。
+- rescue節内で実行されるraiseメソッドに引数を省略した場合、**対象のrescue節の引数と同じオブジェクトが渡される。**
 
 ### ensureの追加
-
 ```ruby
 class ExceptionTest
   def test
@@ -150,11 +144,9 @@ Other
 class: ZeroDivisionError
 =end
 ```
+- ensure節を追加したことにより処理が行われているが、**raiseにより発生した例外補足の前にensure節が実行されている**
 
-ensure節を追加したことにより処理が行われているが、**raiseにより発生した例外補足の前にensure節が実行されている**
-
-### まとめ
-
+## まとめ
 ```ruby
   begin
 　　例外が起きそうな通常処理
