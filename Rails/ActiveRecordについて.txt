@@ -1,4 +1,0 @@
-/*参考サイト*/
-
-RailsでデータをDBに投入する Active Record [初心者向けチュートリアル]
-[http://morizyun.github.io/blog/active-record-rails-beginner-tutorial/]
