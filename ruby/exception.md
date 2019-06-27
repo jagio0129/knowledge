@@ -5,7 +5,7 @@ tags: []
 ---
 ## Rubyにおける例外処理の基本(begin~rescue~end)
 
-```rb
+```ruby
 class ExceptionTest
   def test
     begin
@@ -25,7 +25,7 @@ obj.test # => ZeroDivisionError
 
 ### rescue StandardError => exを追加
 
-```rb
+```ruby
 class ExceptionTest
   def test
     begin
@@ -49,7 +49,7 @@ rubyは上から下に向かい処理が実行されるため、発生した例�
 ### raiseの追加
 railseは例外を発生させるKernelモジュールのインスタンスメソッド
 
-```rb
+```ruby
 class ExceptionTest
   def test
     begin
@@ -117,7 +117,7 @@ class: ZeroDivisionError
 
 ### ensureの追加
 
-```rb
+```ruby
 class ExceptionTest
   def test
     begin
@@ -155,7 +155,7 @@ ensure節を追加したことにより処理が行われているが、**raise�
 
 ### まとめ
 
-```rb
+```ruby
   begin
 　　例外が起きそうな通常処理
 　rescue
