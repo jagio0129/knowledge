@@ -1,7 +1,7 @@
 ---
 title: 例外処理の基礎
 tags: []
-# excerpt: ローカルマシンで定期的にスクリプトを動かしたいと気に使える。cronのようなもの。
+excerpt: begin, resque, raiseや例外の補足などの基礎
 ---
 ## Rubyにおける例外処理の基本(begin rescue end)
 ```ruby
