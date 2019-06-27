@@ -15,7 +15,7 @@ Product.const_set(:TAX_RATE, 0.05)
 p Product::TAX_RATE # => 0.05
 ```
 
-## [send(Object)](http://ref.xaio.jp/ruby/classes/object/send)
+## [send](http://ref.xaio.jp/ruby/classes/object/send)
 - `obj.send(name, [arg, ...])`
 - レシーバの持っているメソッドを呼び出す
 - nameにメソッド名をシンボルか文字列で指定
