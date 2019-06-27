@@ -82,7 +82,7 @@ rubyは例外が発生した場合、発生した地点から例外が補足さ�
 
 呼び出し元に例外補足処理を加えてみる。
 
-```rb
+```ruby
 class ExceptionTest
   def test
     begin
