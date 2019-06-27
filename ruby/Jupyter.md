@@ -1,6 +1,6 @@
 ---
 title: JupyterでRubyを有効にする
-tags: ["gem"]
+tags: []
 # excerpt: ローカルマシンで定期的にスクリプトを動かしたいと気に使える。cronのようなもの。
 ---
 # JupyterでRubyを有効にする
