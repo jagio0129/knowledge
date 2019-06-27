@@ -1,5 +1,10 @@
-# RubyでJupyterを動かす
-> Jupyter導入はpython/jupter.mdに記載
+---
+title: JupyterでRubyを有効にする
+tags: ["gem"]
+# excerpt: ローカルマシンで定期的にスクリプトを動かしたいと気に使える。cronのようなもの。
+---
+# JupyterでRubyを有効にする
+Jupyter導入はpython/jupter.mdに記載
 
 ## 必要パッケージのインストール
 ```
@@ -11,9 +16,9 @@ cd czmq
 gem install cztop iruby
 iruby register --force
 ```
-http://localhost:8888がブラウザで開くとNew ▼からRubyが選べるようになる。
 
-選んだ後、Inのところにソースコードを貼り付けRunを押すとグラフが表示される
+- <http://localhost:8888>がブラウザで開くとNewからRubyが選べるようになる。
+- 選んだ後、Inのところにソースコードを貼り付けRunを押すとグラフが表示される
 
 ## 参考サイト
 - [SciRuby/iruby](https://github.com/SciRuby/iruby)
