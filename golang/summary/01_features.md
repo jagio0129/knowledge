@@ -1,3 +1,9 @@
+---
+title: golang
+tags: [golang]
+excerpt: golangとは
+---
+
 # Go言語、golang
 - 2009年にgoogleより発表された言語
 

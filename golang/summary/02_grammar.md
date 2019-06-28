@@ -1,3 +1,9 @@
+---
+title: 言語仕様
+tags: [golang]
+excerpt: golangの言語仕様について
+---
+
 # 2.言語仕様
 ## インポート
 ```go
