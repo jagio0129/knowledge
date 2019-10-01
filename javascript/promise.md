@@ -4,22 +4,13 @@ tags: ["javascript", "coffeescript", "非同期処理"]
 excerpt: 非同期処理
 ---
 
-macのターミナルでjsを動かすために以下を実行する
-
-```
-cd /usr/local/bin
-ln -s /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc ./
-
-jcs <file.js>
-```
-
 ## 非同期処理
 通常プログラム上から下へ順番に一つずつ処理する。これを同期処理という。
 
 ```javascript
-print (1);
-print (2);
-print (3);
+console.log (1);
+console.log (2);
+console.log (3);
 
 1
 2
@@ -32,12 +23,12 @@ print (3);
 function sleep(waitMsec) {
   var startMsec = new Date();
   while (new Date() - startMsec < waitMsec);
-  print(2)
+  console.log(2)
 }
 
-print (1);
+console.log (1);
 sleep(5000);
-print (3);
+console.log (3);
 
 1
 // 5s wait
