@@ -51,6 +51,9 @@ Runnerでジョブを実行させるにはリポジトリ直下に `.gitlab-ci.y
 rspecのjobを並列で動かしたい場合はpararellを設定すろと良さそう
 - https://qiita.com/ynott/items/1ff698868ef85e50f5a1#parallel
 
+CIでRspec高速化の参考になりそう
+- https://www.neotericdesign.com/articles/2018/04/running-your-rails-test-suite-with-dockerized-selenium-on-gitlab-ci/
+
 ## 参考サイト
 - GitLab RunnerでCI/CDしてみる(前編)
   - https://dev.classmethod.jp/ci/gitlab-runner-ci-cd-1/
