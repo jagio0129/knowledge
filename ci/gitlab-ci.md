@@ -47,6 +47,8 @@ Runnerでジョブを実行させるにはリポジトリ直下に `.gitlab-ci.y
 
 その他の設定パラメータは[こちら](https://qiita.com/ynott/items/1ff698868ef85e50f5a1#%E8%A8%AD%E5%AE%9A%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC)を参照。
 
+## config.tomlの役割
+
 ## Tips
 rspecのjobを並列で動かしたい場合はpararellを設定すろと良さそう
 - https://qiita.com/ynott/items/1ff698868ef85e50f5a1#parallel
@@ -63,3 +65,4 @@ CIでRspec高速化の参考になりそう
   - https://qiita.com/ynott/items/1ff698868ef85e50f5a1
 - GitLab CI上でRailsアプリをRSpec(System Spec)でdocker-seleniumを利用してE2Eテストした話
   - https://qiita.com/kochoru/items/260731fa67ea70987cf5
+
